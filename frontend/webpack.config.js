@@ -5,7 +5,7 @@ require('dotenv').config();
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    index: ['./src/index.ts'],
+    index: ['./src/index.ts']
   },
   module: {
     rules: [

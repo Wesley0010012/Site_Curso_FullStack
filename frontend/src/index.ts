@@ -1,2 +1,7 @@
-console.log("Test");
-console.log("Test2");
+import Alpine from 'alpinejs';
+import './types/AlpineType';
+import './App';
+
+window.Alpine = Alpine;
+
+Alpine.start()

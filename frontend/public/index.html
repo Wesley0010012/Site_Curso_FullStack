@@ -10,23 +10,12 @@
     <div id="container">
       <h2 id="title">Curso de back e front</h2>
 
-      <button id="create">Create</button>
+      <div x-data="App">
+        <button x-on:click="create">Create</button>
+      </div>
     </div>
 
-    <script>
-      const buttonCreate = document.querySelector("#create");
-
-      buttonCreate.addEventListener('click',async function() {
-        try {
-          const response = await fetch('http://localhost:3000/user/create', {
-            method: 'post'
-          })
-
-          console.log(await response.json());
-        } catch(error) {
-          console.log(error);
-        }
-      })
-    </script>
+    <script defer src="./assets/dist/index.js"></script>
+    <script defer src="./assets/dist/App.js"></script>
   </body>
 </html>
