@@ -7,6 +7,26 @@
     <title>Projeto - Curso FullStack</title>
   </head>
   <body>
-    
+    <div id="container">
+      <h2 id="title">Curso de back e front</h2>
+
+      <button id="create">Create</button>
+    </div>
+
+    <script>
+      const buttonCreate = document.querySelector("#create");
+
+      buttonCreate.addEventListener('click',async function() {
+        try {
+          const response = await fetch('http://localhost:3000/user/create', {
+            method: 'post'
+          })
+
+          console.log(await response.json());
+        } catch(error) {
+          console.log(error);
+        }
+      })
+    </script>
   </body>
 </html>
