@@ -1,6 +1,6 @@
 import Alpine from 'alpinejs';
 import './types/AlpineType';
-import './App';
+import './Create';
 
 window.Alpine = Alpine;
 
